@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+   
+    height: 120px;
+    width: 100%;
+    padding: 50px 100px;
+    position: fixed;
+    z-index: 999;
+    
+}
+
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+}
+
+#cursorblur{
+    height: 300px;
+    width: 300px;
+    background-color: #c0ef3e45;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+ 
+}
+
+#nav img{
+    height: 65px;
+
+}
+
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1
+    ;
+
+
+}
+
+#main{
+    position:relative;
+    background-color: rgba(0,0,0,0.35);
+    
+}
+
+
+#page1{
+  
+   
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10
+    ;
+    
+   
+    
+
+}
+
+#page1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+    
+}
+
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    left: -3px;
+    top: -3px;
+    -webkit-text-stroke: 1px  #95c11e;
+    z-index: -1;
+}
+
+#page1 h2{
+    font-size: 27px;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
+}
+
+#page1 p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 50%;
+    text-align: center;
+}
+
+#page2{
+    height: 
+    width: 100%;
+    z-index: 10;
+
+}
+
+#scroller{
+    background-color: rgba(255, 0, 0, 0);
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    
+}
+
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+
+#scroller_in{
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+#scroller h4{
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 700;
+    font-famil;
+    margin-right: 50px;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 0, 0);
+    transition:.5s ;
+
+}
+
+#scroller h4:hover{
+    color: #95c11e;
+    
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+
+#aboutus{
+    width: 100%;
+
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 30px;
+    margin-top: 100px;
+}
+
+#aboutus img{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+aboutusin h3{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    
+
+}
+
+#aboutusin p{
+    margin-top: 20px;
+    font: 18px;
+    
+}
+
+
+#aboutusin{
+    width: 40%;
+    text-align: center;
+ 
+
+}
+]
